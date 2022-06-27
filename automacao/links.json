@@ -1,0 +1,65 @@
+{
+    "sensorWeb":{
+        "xpath_site_link":"https://sensorweb.com.br",        
+        "xpath_site_home":{
+            "xpath_vantagens":"/html/body/div[2]/div/div[3]/div/ul/li[1]/a/span[2]",
+            "xpath_como_funciona":{            
+                "xpath_page":"/html/body/div[2]/div/div[3]/div/ul/li[2]/a/span[2]",
+                "xpath_midia":"/html/body/div[2]/div/div[7]/div/div/div/div/div[3]/div/div"
+            
+            },
+            "xpath_area_atuacao":{
+                "xpath_page":"/html/body/div[2]/div/div[3]/div/ul/li[3]/a/span[2]",
+                "xpath_banco_sangue":"/html/body/div[2]/div/div[10]/div/div[1]/a[2]",
+                "xpath_laboratorio_pesquisa":"/html/body/div[2]/div/div[10]/div/div[1]/a[3]",
+                "xpath_Logistica_farmaceutica":"/html/body/div[2]/div/div[10]/div/div[1]/a[4]" 
+            },
+      
+             "xpath_dizem":"/html/body/div[2]/div/div[3]/div/ul/li[4]/a/span[2]"
+
+        },
+
+        "xpath_site_sobrenos":{
+            "xpath_page":"/html/body/div[2]/div/div[12]/div/div[2]/section/div/ul/li[2]/a",
+            "xpath_elements":"/html/body/div[2]/div/div[1]/div/a"
+        },
+      
+        "xpath_site_clientes":{
+            "xpath_page":"/html/body/div[2]/div/div[17]/div/div[2]/section/div/ul/li[4]/a"
+        },
+        "xpath_site_parceiros":{
+            "xpath_page":"/html/body/div[2]/div/div[6]/div/div[2]/section/div/ul/li[5]/a"
+        },
+        
+        "xpath_site_solucoes":{
+            "xpath_page":"/html/body/div[2]/div/div[12]/div/div[2]/section/div/ul/li[3]/a"
+        },
+        
+        "xpath_site_contatos":{
+            "xpath_page":"/html/body/div[2]/div/div[12]/div/div[2]/section/div/ul/li[9]/a",
+            "xpath_form_nome":"/html/body/div[2]/div/div[1]/div/main/div/div/div/div[3]/section[2]/div/div/section/div/div/section/div/div/div/div[1]/form/div[1]/div[1]/input",
+            "xpath_form_email":"/html/body/div[2]/div/div[1]/div/main/div/div/div/div[3]/section[2]/div/div/section/div/div/section/div/div/div/div[1]/form/div[1]/div[2]/input",
+            "xpath_form_telefone":"/html/body/div[2]/div/div[1]/div/main/div/div/div/div[3]/section[2]/div/div/section/div/div/section/div/div/div/div[1]/form/div[1]/div[3]/div/input",
+            "xpath_form_empresa":"/html/body/div[2]/div/div[1]/div/main/div/div/div/div[3]/section[2]/div/div/section/div/div/section/div/div/div/div[1]/form/div[1]/div[4]/input",
+            "xpath_form_cargo":"/html/body/div[2]/div/div[1]/div/main/div/div/div/div[3]/section[2]/div/div/section/div/div/section/div/div/div/div[1]/form/div[1]/div[5]/input",
+            "xpath_form_areaatuacao":"/html/body/div[2]/div/div[1]/div/main/div/div/div/div[3]/section[2]/div/div/section/div/div/section/div/div/div/div[1]/form/div[1]/div[6]/select",
+            "xpath_form_mensagem":"/html/body/div[2]/div/div[1]/div/main/div/div/div/div[3]/section[2]/div/div/section/div/div/section/div/div/div/div[1]/form/div[1]/div[7]/textarea",
+            "xpath_form_checkbox":"/html/body/div[2]/div/div[1]/div/main/div/div/div/div[3]/section[2]/div/div/section/div/div/section/div/div/div/div[1]/form/div[1]/div[8]/div/label/input"
+
+        },
+
+        "xpath_site_blog":{
+            "xpath_page":"/html/body/div[2]/div/div[6]/div/div[2]/section/div/ul/li[8]/a"
+            
+            
+        },
+        "xpath_site_vagas":{
+            "xpath_page":"/html/body/div[2]/div/div[7]/div/div[2]/section/div/ul/li[6]/a",
+            "xpath_elements":"/html/body/div[2]/div/div[1]/div/a"
+            
+        }
+    }
+}   
+
+
+

@@ -3,10 +3,12 @@ from automacao.automacao import AutomacaoSensorWeb
 site = AutomacaoSensorWeb()
 site.Home()
 site.Clientes()
-site.Parceiros()
-site.Sorbrenos()
+site.Sobrenos()
 site.Solucoes()
 site.Contatos()
+site.Parceiros()
+site.Vagas()
 site.Blog()
+
 
 
