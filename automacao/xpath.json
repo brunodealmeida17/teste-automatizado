@@ -57,6 +57,29 @@
             "xpath_page":"/html/body/div[2]/div/div[7]/div/div[2]/section/div/ul/li[6]/a",
             "xpath_elements":"/html/body/div[2]/div/div[1]/div/a"
             
+        },
+        "xpath_site_conteudo":{
+            "xpath_page":"/html/body/div[3]/div/div[3]/div/div[2]/section/div/ul/li[7]/a",
+            "xpath_elements":"/html/body/div[3]/div/div[1]/div/a"
+            
+            
+        },
+        "xpath_site_apresentacao":{
+            "xpath_page":"/html/body/div[3]/div/div[4]/div/div[2]/section/div/ul/li[10]/a",
+            "xpath_elements":"/html/body/div[2]/div/div[1]/div/a",
+            "xpath_form_nome":"/html/body/div[2]/div/div[2]/div/div/div/div/div[2]/section/div/div/section/div/div/section/div/div/div/div[1]/form/div[1]/div[1]/input",
+            "xpath_form_email":"/html/body/div[2]/div/div[2]/div/div/div/div/div[2]/section/div/div/section/div/div/section/div/div/div/div[1]/form/div[1]/div[2]/input",
+            "xpath_form_empresa":"/html/body/div[2]/div/div[2]/div/div/div/div/div[2]/section/div/div/section/div/div/section/div/div/div/div[1]/form/div[1]/div[3]/input",
+            "xpath_form_telefone":"/html/body/div[2]/div/div[2]/div/div/div/div/div[2]/section/div/div/section/div/div/section/div/div/div/div[1]/form/div[1]/div[4]/div/input",             
+            "xpath_form_areaatuacao":"/html/body/div[2]/div/div[2]/div/div/div/div/div[2]/section/div/div/section/div/div/section/div/div/div/div[1]/form/div[1]/div[5]/select",
+            "xpath_form_cargo":"/html/body/div[2]/div/div[2]/div/div/div/div/div[2]/section/div/div/section/div/div/section/div/div/div/div[1]/form/div[1]/div[6]/select",
+            "xpath_form_pontosdemonitoramento":"/html/body/div[2]/div/div[2]/div/div/div/div/div[2]/section/div/div/section/div/div/section/div/div/div/div[1]/form/div[1]/div[7]/select",
+            "xpath_form_formaderegistro":"/html/body/div[2]/div/div[2]/div/div/div/div/div[2]/section/div/div/section/div/div/section/div/div/div/div[1]/form/div[1]/div[8]/select",
+            "xpath_form_estado":"/html/body/div[2]/div/div[2]/div/div/div/div/div[2]/section/div/div/section/div/div/section/div/div/div/div[1]/form/div[1]/div[9]/select",
+            "xpath_form_mensagem":"/html/body/div[2]/div/div[2]/div/div/div/div/div[2]/section/div/div/section/div/div/section/div/div/div/div[1]/form/div[1]/div[10]/textarea",
+            "xpath_form_checkbox":"/html/body/div[2]/div/div[2]/div/div/div/div/div[2]/section/div/div/section/div/div/section/div/div/div/div[1]/form/div[1]/div[11]/div/label"
+            
+            
         }
     }
 }   

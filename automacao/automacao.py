@@ -4,9 +4,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import json
-
 import time
-from automacao.xpath import *
+
 
 
 
@@ -15,7 +14,7 @@ class AutomacaoSensorWeb():
         self.driver = webdriver.Chrome(executable_path=r'chromedriver/chromedriver.exe')
         self.driver.maximize_window()
         
-        with open("./automacao/links.json", encoding="utf-8") as arquivo:
+        with open("./automacao/xpath.json", encoding="utf-8") as arquivo:
             self.dados = json.load(arquivo)
 
     def Scroll(self):
@@ -43,7 +42,7 @@ class AutomacaoSensorWeb():
         self.driver.find_element(By.XPATH, self.dados["sensorWeb"]["xpath_site_home"]["xpath_como_funciona"]["xpath_page"]).click()
         time.sleep(5)
         self.driver.find_element(By.XPATH, self.dados["sensorWeb"]["xpath_site_home"]["xpath_como_funciona"]["xpath_midia"]).click()
-        time.sleep(10)
+        time.sleep(185)
         self.driver.find_element(By.XPATH, self.dados["sensorWeb"]["xpath_site_home"]["xpath_area_atuacao"]["xpath_page"]).click()
         time.sleep(5)
         self.driver.execute_script("window.scrollTo(0, window.scrollY + 200);")
@@ -116,6 +115,43 @@ class AutomacaoSensorWeb():
         time.sleep(5)
         self.Scroll()
         self.Scroll
+        
+    def Conteudo(self):
+        self.driver.find_element(By.XPATH, self.dados["sensorWeb"]["xpath_site_conteudo"]["xpath_page"]).click()
+        time.sleep(10)
+        self.driver.find_element(By.XPATH, self.dados["sensorWeb"]["xpath_site_conteudo"]["xpath_elements"]).click()
+        time.sleep(5)
+        self.Scroll()
+    
+    def Apresentacao(self):
+        self.driver.find_element(By.XPATH, self.dados["sensorWeb"]["xpath_site_apresentacao"]["xpath_page"]).click()
+        time.sleep(8)
+        self.driver.find_element(By.XPATH, self.dados["sensorWeb"]["xpath_site_apresentacao"]["xpath_form_nome"]).send_keys(
+            'Bruno de Almeida MIranda')
+        self.driver.find_element(By.XPATH, self.dados["sensorWeb"]["xpath_site_apresentacao"]["xpath_form_email"]).send_keys(
+            'brunodealmeida17@hotmail.com')
+        self.driver.find_element(
+            By.XPATH, self.dados["sensorWeb"]["xpath_site_apresentacao"]["xpath_form_empresa"]).send_keys('SensorWeb')
+        self.driver.find_element(
+            By.XPATH, self.dados["sensorWeb"]["xpath_site_apresentacao"]["xpath_form_telefone"]).send_keys('61993069676')
+        self.driver.find_element(
+            By.XPATH, self.dados["sensorWeb"]["xpath_site_apresentacao"]["xpath_form_areaatuacao"]).send_keys('outro')        
+        self.driver.find_element(
+            By.XPATH, self.dados["sensorWeb"]["xpath_site_apresentacao"]["xpath_form_cargo"]).send_keys('outro')
+        self.driver.find_element(
+            By.XPATH, self.dados["sensorWeb"]["xpath_site_apresentacao"]["xpath_form_pontosdemonitoramento"]).send_keys('1')        
+        self.driver.find_element(
+            By.XPATH, self.dados["sensorWeb"]["xpath_site_apresentacao"]["xpath_form_formaderegistro"]).send_keys('planilha')
+        self.driver.find_element(
+            By.XPATH, self.dados["sensorWeb"]["xpath_site_apresentacao"]["xpath_form_estado"]).send_keys('go')
+        
+        self.driver.find_element(By.XPATH, self.dados["sensorWeb"]["xpath_site_apresentacao"]["xpath_form_mensagem"]).send_keys(
+            'Teste automatizado com selenium (python) para processo seletivo ')       
+        self.driver.find_element(By.XPATH, self.dados["sensorWeb"]["xpath_site_apresentacao"]["xpath_form_checkbox"]).click()
+        time.sleep(7)
+        self.driver.execute_script("window.scrollTo(0, window.scrollY + 300);")
+        time.sleep(8)
+        self.Scroll()
         
         
         

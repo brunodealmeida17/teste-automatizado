@@ -9,6 +9,9 @@ site.Contatos()
 site.Parceiros()
 site.Vagas()
 site.Blog()
+site.Conteudo()
+site.Apresentacao()
+
 
 
 
